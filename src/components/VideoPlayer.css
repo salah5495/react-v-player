@@ -1,0 +1,65 @@
+.video-player-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main-video {
+  flex: 2;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.main-video h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.main-video .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+}
+
+.video-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 50%;
+  height: auto;
+  max-height: 40px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-thumbnail h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.video-thumbnail:hover {
+  transform: scale(1.05);
+}
